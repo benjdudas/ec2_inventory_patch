@@ -7,7 +7,7 @@ Instructions:
   - sudo -i
   - ansible-tower-service stop
   - cd /var/lib/awx/venv/awx/lib/python3.6/site-packages/awx/main/models/
-  - mv inventory.py inventory.bak
+  - mv inventory.py inventory.py.bak
   - wget https://raw.githubusercontent.com/benjdudas/ec2_inventory_patch/main/inventory.py
   - chmod 644 inventory.py
   - ansible-tower-service start
